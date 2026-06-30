@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Política de Privacidade — SmartReplay Sport</title>
+<style>
+  :root {
+    --bg: #121214;
+    --fg: #f2f2f2;
+    --muted: #b7b7b7;
+    --accent: #39FF14;
+    --card: #1a1a1c;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+  }
+  .container {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 40px 20px 80px;
+  }
+  header {
+    margin-bottom: 32px;
+  }
+  header h1 {
+    font-size: 1.8rem;
+    margin-bottom: 4px;
+  }
+  header p {
+    color: var(--muted);
+    font-size: 0.95rem;
+    margin: 0;
+  }
+  h2 {
+    color: var(--accent);
+    font-size: 1.15rem;
+    margin-top: 36px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #2a2a2d;
+    padding-bottom: 6px;
+  }
+  p, li { color: #e2e2e2; font-size: 0.97rem; }
+  ul { padding-left: 22px; }
+  li { margin-bottom: 8px; }
+  .card {
+    background: var(--card);
+    border: 1px solid #2a2a2d;
+    border-radius: 10px;
+    padding: 16px 18px;
+    margin-bottom: 14px;
+  }
+  .card h3 {
+    margin: 0 0 6px;
+    font-size: 1rem;
+    color: var(--fg);
+  }
+  .card p { margin: 0; color: var(--muted); font-size: 0.92rem; }
+  a { color: var(--accent); }
+  footer {
+    margin-top: 48px;
+    padding-top: 16px;
+    border-top: 1px solid #2a2a2d;
+    color: var(--muted);
+    font-size: 0.85rem;
+  }
+  .badge {
+    display: inline-block;
+    background: rgba(57,255,20,0.12);
+    color: var(--accent);
+    border: 1px solid rgba(57,255,20,0.4);
+    border-radius: 999px;
+    padding: 2px 10px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    margin-bottom: 16px;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <span class="badge">SmartReplay Sport</span>
+    <h1>Política de Privacidade</h1>
+    <p>Última atualização: 30 de junho de 2026</p>
+  </header>
+
+  <p>
+    Esta Política de Privacidade descreve como o aplicativo <strong>SmartReplay Sport</strong>
+    ("o App"), desenvolvido por Edward Borba ("nós", "desenvolvedor"), lida com dados durante
+    o uso do App. O SmartReplay Sport grava vídeo continuamente e permite salvar os últimos
+    segundos de jogada por comando de voz, controle remoto Bluetooth/relógio ou botão na tela.
+  </p>
+
+  <h2>1. Câmera</h2>
+  <p>
+    O App usa a câmera do seu dispositivo para gravar vídeo continuamente enquanto está em uso.
+    Essa gravação é feita e processada <strong>inteiramente no seu aparelho</strong>. O
+    desenvolvedor não tem acesso, não recebe e não armazena em nenhum servidor o vídeo
+    capturado pela câmera.
+  </p>
+
+  <h2>2. Microfone e comando de voz</h2>
+  <p>
+    Se você ativar o controle por voz nas configurações, o App usa o microfone para detectar
+    um par fixo de expressões de ativação e confirmação (ex.: "lance bom" + "gravar") que
+    disparam o salvamento da jogada. Esse reconhecimento é feito por um modelo de voz
+    (<a href="https://alphacephei.com/vosk/" target="_blank" rel="noopener">Vosk</a>) que roda
+    <strong>totalmente offline, no próprio dispositivo</strong> — nenhum áudio captado pelo
+    microfone é enviado pela internet, gravado em arquivo permanente ou compartilhado com o
+    desenvolvedor ou terceiros. Sem o controle de voz ativado, o microfone só é usado (se a
+    opção "Gravar áudio" estiver ligada) para incluir áudio no próprio clipe de vídeo salvo,
+    da mesma forma descrita na seção 3.
+  </p>
+
+  <h2>3. Armazenamento local do vídeo</h2>
+  <p>
+    Os clipes salvos pelo App são gravados diretamente na galeria pública do seu dispositivo
+    (pasta <code>Movies/ReplaySport</code>, via MediaStore do Android). Esses arquivos ficam
+    armazenados <strong>localmente no seu aparelho</strong>; o desenvolvedor não tem acesso a
+    eles, não os recebe e não os transmite para nenhum servidor. Você controla esses arquivos
+    como controla qualquer outro vídeo salvo no seu dispositivo (pode excluir, compartilhar ou
+    copiar livremente).
+  </p>
+
+  <h2>4. Anúncios (Google AdMob)</h2>
+  <p>
+    A versão gratuita do App exibe anúncios intersticiais fornecidos pelo
+    <strong>Google AdMob</strong>. Para isso, o SDK do AdMob pode coletar e processar dados como
+    identificador de publicidade do dispositivo, endereço IP aproximado e informações de
+    interação com o anúncio, conforme a
+    <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Política de
+    Privacidade do Google</a> e a
+    <a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener">
+    política de dados do AdMob</a>. Esses dados são processados pelo Google, não pelo
+    desenvolvedor do App.
+  </p>
+  <p>
+    Usuários da versão <strong>PRO</strong> (assinatura paga) não veem anúncios e,
+    consequentemente, o SDK do AdMob não é acionado para exibição de anúncios nessa versão.
+  </p>
+
+  <h2>5. Compras dentro do app (versão PRO)</h2>
+  <p>
+    A assinatura PRO é processada inteiramente pelo <strong>Google Play Billing</strong>. O
+    desenvolvedor não recebe, não processa e não armazena dados de cartão de crédito ou
+    pagamento — essas informações ficam exclusivamente com o Google, conforme a política de
+    privacidade da própria Google Play Store.
+  </p>
+
+  <h2>6. Permissões usadas pelo App</h2>
+  <div class="card">
+    <h3>Câmera</h3>
+    <p>Necessária para a gravação contínua de vídeo — função principal do App.</p>
+  </div>
+  <div class="card">
+    <h3>Microfone</h3>
+    <p>Necessária para o controle por voz (processamento local, ver seção 2) e/ou para incluir áudio no clipe salvo.</p>
+  </div>
+  <div class="card">
+    <h3>Internet / Estado da rede</h3>
+    <p>Necessária para carregar os anúncios (versão Free) e verificar a assinatura PRO junto ao Google Play.</p>
+  </div>
+  <div class="card">
+    <h3>Armazenamento de mídia</h3>
+    <p>Necessária para salvar o clipe gravado na galeria pública do dispositivo.</p>
+  </div>
+
+  <h2>7. Compartilhamento de dados com terceiros</h2>
+  <p>
+    O desenvolvedor não vende, aluga nem compartilha dados pessoais dos usuários com terceiros,
+    exceto pelos serviços essenciais ao funcionamento do App já descritos acima: o Google AdMob
+    (exibição de anúncios) e o Google Play Billing (processamento de assinatura PRO).
+  </p>
+
+  <h2>8. Crianças</h2>
+  <p>
+    O SmartReplay Sport não é direcionado a crianças menores de 13 anos e o desenvolvedor não
+    coleta intencionalmente dados de crianças.
+  </p>
+
+  <h2>9. Alterações nesta política</h2>
+  <p>
+    Esta política pode ser atualizada periodicamente para refletir mudanças no App. A data da
+    última atualização está sempre indicada no topo desta página. Recomendamos revisitar esta
+    página de tempos em tempos.
+  </p>
+
+  <h2>10. Contato</h2>
+  <p>
+    Dúvidas sobre esta política ou sobre o tratamento de dados no SmartReplay Sport podem ser
+    enviadas para
+    <a href="mailto:smartreplaysports@gmail.com">smartreplaysports@gmail.com</a>.
+  </p>
+
+  <footer>
+    SmartReplay Sport — Política de Privacidade. Edward Borba, 2026.
+  </footer>
+</div>
+</body>
+</html>
