@@ -87,7 +87,7 @@
   <header>
     <span class="badge">SmartReplay Sport</span>
     <h1>Política de Privacidade</h1>
-    <p>Última atualização: 30 de junho de 2026</p>
+    <p>Última atualização: 15 de novembro de 2026</p>
   </header>
 
   <p>
@@ -108,20 +108,31 @@
   <h2>2. Microfone e comando de voz</h2>
   <p>
     Se você ativar o controle por voz nas configurações, o App usa o microfone para detectar
-    um par fixo de expressões de ativação e confirmação (ex.: "lance bom" + "gravar") que
-    disparam o salvamento da jogada. Esse reconhecimento é feito por um modelo de voz
+    a expressão curta que você escolheu (ex.: "que lance") e salvar a jogada.
+  </p>
+  <p>
+    <strong>No Android</strong>, esse reconhecimento é feito por um modelo de voz
     (<a href="https://alphacephei.com/vosk/" target="_blank" rel="noopener">Vosk</a>) que roda
-    <strong>totalmente offline, no próprio dispositivo</strong> — nenhum áudio captado pelo
-    microfone é enviado pela internet, gravado em arquivo permanente ou compartilhado com o
-    desenvolvedor ou terceiros. Sem o controle de voz ativado, o microfone só é usado (se a
+    totalmente offline, no próprio dispositivo: nenhum áudio é enviado pela internet.
+  </p>
+  <p>
+    <strong>No iPhone e no iPad</strong>, o reconhecimento é o do próprio sistema (Apple) e roda
+    no aparelho. Se o reconhecimento no aparelho falhar repetidas vezes, o sistema pode enviar o
+    áudio do comando aos servidores da Apple para reconhecê-lo, conforme a política de
+    privacidade da Apple e o aviso exibido quando o App pede a permissão de reconhecimento de fala.
+  </p>
+  <p>
+    Em nenhum caso o áudio do microfone é gravado em arquivo permanente pelo reconhecimento,
+    nem enviado ao desenvolvedor. Sem o controle de voz ativado, o microfone só é usado (se a
     opção "Gravar áudio" estiver ligada) para incluir áudio no próprio clipe de vídeo salvo,
     da mesma forma descrita na seção 3.
   </p>
 
   <h2>3. Armazenamento local do vídeo</h2>
   <p>
-    Os clipes salvos pelo App são gravados diretamente na galeria pública do seu dispositivo
-    (pasta <code>Movies/ReplaySport</code>, via MediaStore do Android). Esses arquivos ficam
+    Os clipes salvos pelo App são gravados diretamente na galeria do seu dispositivo (no Android,
+    pasta <code>Movies/SmartReplay</code>; no iPhone e no iPad, álbum "SmartReplay" do app Fotos,
+    com permissão apenas para <em>adicionar</em> — o App não lê as suas fotos). Esses arquivos ficam
     armazenados <strong>localmente no seu aparelho</strong>; o desenvolvedor não tem acesso a
     eles, não os recebe e não os transmite para nenhum servidor. Você controla esses arquivos
     como controla qualquer outro vídeo salvo no seu dispositivo (pode excluir, compartilhar ou
@@ -144,16 +155,52 @@
     Usuários da versão <strong>PRO</strong> (assinatura paga) não veem anúncios e,
     consequentemente, o SDK do AdMob não é acionado para exibição de anúncios nessa versão.
   </p>
+  <p>
+    Onde a lei exige, o App pede o seu consentimento antes de exibir anúncios personalizados. No
+    iPhone e no iPad, o identificador de publicidade só é usado se você autorizar no pedido de
+    rastreamento do sistema ("Permitir rastreamento"); recusar não muda nada no funcionamento do App.
+  </p>
+  <p>
+    A partir da versão 1.8, a versão gratuita também pode exibir <strong>anúncios de marcas
+    parceiras</strong>, escolhidos pelo desenvolvedor. Para isso o App consulta uma lista pública de
+    parceiros no site <code>qjogo.com.br</code>, sem enviar nenhum dado seu, e registra apenas se
+    o anúncio foi exibido ou tocado (ver seção 6).
+  </p>
 
   <h2>5. Compras dentro do app (versão PRO)</h2>
   <p>
-    A assinatura PRO é processada inteiramente pelo <strong>Google Play Billing</strong>. O
-    desenvolvedor não recebe, não processa e não armazena dados de cartão de crédito ou
-    pagamento — essas informações ficam exclusivamente com o Google, conforme a política de
-    privacidade da própria Google Play Store.
+    A assinatura PRO é processada inteiramente pela loja do seu aparelho: <strong>Google Play</strong>
+    no Android e <strong>App Store</strong> (Apple) no iPhone e no iPad. O desenvolvedor não recebe,
+    não processa e não armazena dados de cartão de crédito ou pagamento — essas informações ficam
+    exclusivamente com o Google ou com a Apple, conforme as políticas de privacidade de cada loja.
   </p>
 
-  <h2>6. Permissões usadas pelo App</h2>
+  <h2>6. Relatórios de falha e medição de uso (Google Firebase)</h2>
+  <p>
+    Para corrigir defeitos, o App envia <strong>relatórios de falha</strong> pelo
+    <strong>Firebase Crashlytics</strong> (Google): modelo do aparelho, versão do sistema e do App,
+    o ponto do App em que a falha aconteceu, um registro técnico dos últimos passos do App e um
+    identificador aleatório da instalação, que não revela quem você é.
+  </p>
+  <p>
+    A partir da versão 1.8, o App também usa o <strong>Firebase Analytics</strong> (Google) para
+    contar, de forma agregada, como ele é usado — por exemplo: tutorial concluído, gravação
+    iniciada, jogada salva, tela da assinatura PRO vista, anúncio de parceiro exibido. Esses
+    registros vêm acompanhados de dados técnicos como modelo do aparelho, país aproximado e um
+    identificador da instalação do App.
+  </p>
+  <p>
+    <strong>O que nunca sai do seu aparelho:</strong> os vídeos, o áudio dos clipes, o texto reconhecido
+    pelo comando de voz, a expressão de voz que você escolheu, os nomes dos clipes e o nome da marca que
+    você digita na versão PRO. Esses relatórios não incluem o seu nome, e-mail ou telefone, e o
+    desenvolvedor não tenta identificar você por eles. Os dados são processados pelo Google
+    conforme a <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Política
+    de Privacidade do Google</a> e a
+    <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">página de
+    privacidade do Firebase</a>.
+  </p>
+
+  <h2>7. Permissões usadas pelo App</h2>
   <div class="card">
     <h3>Câmera</h3>
     <p>Necessária para a gravação contínua de vídeo — função principal do App.</p>
@@ -164,34 +211,39 @@
   </div>
   <div class="card">
     <h3>Internet / Estado da rede</h3>
-    <p>Necessária para carregar os anúncios (versão Free) e verificar a assinatura PRO junto ao Google Play.</p>
+    <p>Necessária para carregar os anúncios (versão Free), verificar a assinatura PRO junto à loja, avisar de versão nova e enviar os relatórios da seção 6.</p>
   </div>
   <div class="card">
-    <h3>Armazenamento de mídia</h3>
-    <p>Necessária para salvar o clipe gravado na galeria pública do dispositivo.</p>
+    <h3>Galeria / Fotos</h3>
+    <p>Necessária para salvar o clipe gravado na galeria do dispositivo (no iPhone, só para adicionar).</p>
+  </div>
+  <div class="card">
+    <h3>Reconhecimento de fala (iPhone e iPad)</h3>
+    <p>Pedida apenas se você ativar o controle por voz (ver seção 2).</p>
   </div>
 
-  <h2>7. Compartilhamento de dados com terceiros</h2>
+  <h2>8. Compartilhamento de dados com terceiros</h2>
   <p>
     O desenvolvedor não vende, aluga nem compartilha dados pessoais dos usuários com terceiros,
     exceto pelos serviços essenciais ao funcionamento do App já descritos acima: o Google AdMob
-    (exibição de anúncios) e o Google Play Billing (processamento de assinatura PRO).
+    (exibição de anúncios), o Google Firebase (relatórios de falha e medição de uso) e as lojas
+    Google Play e App Store (processamento da assinatura PRO).
   </p>
 
-  <h2>8. Crianças</h2>
+  <h2>9. Crianças</h2>
   <p>
     O SmartReplay Sport não é direcionado a crianças menores de 13 anos e o desenvolvedor não
     coleta intencionalmente dados de crianças.
   </p>
 
-  <h2>9. Alterações nesta política</h2>
+  <h2>10. Alterações nesta política</h2>
   <p>
     Esta política pode ser atualizada periodicamente para refletir mudanças no App. A data da
     última atualização está sempre indicada no topo desta página. Recomendamos revisitar esta
     página de tempos em tempos.
   </p>
 
-  <h2>10. Contato</h2>
+  <h2>11. Contato</h2>
   <p>
     Dúvidas sobre esta política ou sobre o tratamento de dados no SmartReplay Sport podem ser
     enviadas para
